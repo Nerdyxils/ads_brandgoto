@@ -113,13 +113,14 @@ const HeroSection = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="hero-logo"
           />
+          <div className="price-badge" aria-label="Websites starting at $199">Websites starting at $199</div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="hero-title"
           >
-            Professional Website in 7 Days — Only $500 CAD
+            Affordable Business Websites Starting at $199
           </motion.h1>
           
           <motion.p
@@ -128,7 +129,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="hero-subtitle"
           >
-            Fill out the form below to get started today
+            Affordable websites with professional branding, SEO-ready builds, and optional AI automation. Fill the form to get started.
           </motion.p>
           
           <motion.div
@@ -230,11 +231,24 @@ const HeroSection = () => {
           z-index: 2;
         }
 
+        .price-badge {
+          display: block;
+          margin: 0.5rem auto 1rem auto;
+          padding: 6px 12px;
+          border-radius: 999px;
+          background: linear-gradient(135deg, #F75F0B, #ef2d56);
+          color: #fff;
+          font-size: 0.95rem;
+          font-weight: 700;
+          width: fit-content;
+          box-shadow: 0 6px 16px rgba(247,95,11,0.35);
+        }
+
         .hero-logo {
           width: 200px;
           height: auto;
-          display: inline-block;
-          margin-bottom: 1rem;
+          display: block;
+          margin: 0 auto 0.25rem auto;
           filter: drop-shadow(0 6px 18px rgba(247, 95, 11, 0.25));
         }
         
@@ -242,7 +256,7 @@ const HeroSection = () => {
           font-size: 3.5rem;
           font-weight: 800;
           line-height: 1.2;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.25rem;
           background: linear-gradient(135deg, #fff 0%, #CFF8FF 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -252,7 +266,7 @@ const HeroSection = () => {
         .hero-subtitle {
           font-size: 1.4rem;
           color: #CFF8FF;
-          margin-bottom: 3rem;
+          margin-bottom: 2.25rem;
           font-weight: 400;
           max-width: 600px;
           margin-left: auto;
@@ -350,7 +364,7 @@ const HeroSection = () => {
         }
         
         @media (max-width: 768px) {
-          .hero-logo { width: 160px; margin-bottom: 0.75rem; }
+          .hero-logo { width: 160px; margin-bottom: 0.25rem; }
           .hero-title {
             font-size: 2.5rem;
           }

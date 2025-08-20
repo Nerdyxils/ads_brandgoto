@@ -86,14 +86,7 @@ const OfferDetails = () => {
           viewport={{ once: true }}
           className="section-header"
         >
-          <div className="social-proof">
-            <p className="social-proof-text">Join 50+ businesses who got their website in 7 days</p>
-            <div className="testimonial-preview">
-              <span className="quote">"BrandGoto delivered exactly what I needed - fast and professional!"</span>
-              <span className="author">- Sarah J., Real Estate Agent</span>
-            </div>
-          </div>
-          <h2 className="section-title">What's Included in Your $500 Website</h2>
+          <h2 className="section-title">What's Included (Starter from $199)</h2>
           <p className="section-subtitle">Complete, professional websites that actually work</p>
         </motion.div>
 
@@ -180,45 +173,6 @@ const OfferDetails = () => {
         .section-header {
           text-align: center;
           margin-bottom: 4rem;
-        }
-        
-        .social-proof {
-          background: linear-gradient(135deg, rgba(247, 95, 11, 0.1) 0%, rgba(2, 57, 66, 0.2) 100%);
-          border-radius: 16px;
-          padding: 2rem;
-          margin-bottom: 3rem;
-          border: 1px solid rgba(247, 95, 11, 0.2);
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        
-        .social-proof-text {
-          color: #F75F0B;
-          font-size: 1.1rem;
-          font-weight: 600;
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-        
-        .testimonial-preview {
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-        
-        .quote {
-          color: rgba(255, 255, 255, 0.9);
-          font-style: italic;
-          font-size: 1rem;
-          line-height: 1.5;
-        }
-        
-        .author {
-          color: #CFF8FF;
-          font-size: 0.9rem;
-          font-weight: 500;
         }
         
         .features-grid {

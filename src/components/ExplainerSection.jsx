@@ -16,7 +16,7 @@ const ExplainerSection = () => {
     {
       icon: "💰",
       title: "Affordable",
-      description: "Flat $500 rate"
+      description: "Starter websites from $199"
     }
   ];
 
@@ -53,7 +53,7 @@ const ExplainerSection = () => {
           className="section-header"
         >
           <h2 className="section-title">Why Choose BrandGoto?</h2>
-          <p className="section-subtitle">Launch fast. Look pro. Stay affordable.</p>
+          <p className="section-subtitle">We deliver results that speak for themselves</p>
         </motion.div>
 
         <motion.div
@@ -151,17 +151,6 @@ const ExplainerSection = () => {
           color: rgba(255, 255, 255, 0.8);
           font-weight: 400;
         }
-
-        .explainer-cta-wrap {
-          display: flex;
-          justify-content: center;
-          margin-top: 2.5rem;
-        }
-
-        .explainer-cta {
-          padding: 16px 28px;
-          border-radius: 999px;
-        }
         
         @media (max-width: 768px) {
           .explainer-section {
@@ -181,7 +170,6 @@ const ExplainerSection = () => {
           .feature-icon {
             font-size: 2.5rem;
           }
-          .explainer-cta { width: 100%; max-width: 420px; }
         }
         
         @media (max-width: 480px) {
@@ -196,7 +184,6 @@ const ExplainerSection = () => {
           .feature-icon {
             font-size: 2rem;
           }
-          .explainer-cta { width: 100%; }
         }
       `}</style>
     </section>
